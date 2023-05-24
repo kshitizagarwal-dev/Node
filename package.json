@@ -1,0 +1,19 @@
+{
+  "name": "nodejsassignment",
+  "version": "1.0.0",
+  "description": "This is a result management application",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Shraddhanjali Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-handlebars": "^6.0.6",
+    "mysql": "^2.18.1"
+  }
+}

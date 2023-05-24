@@ -1,0 +1,31 @@
+
+{{#if error}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{error}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+
+<div class="teachLog">
+  <form method="POST" class="teachForm">
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password : </label>
+      <input type="password" name="password"  class="form-control" id="pass">
+      <br>
+      <input type="checkbox" style="width: 30px;" onclick="myFunction()">Show Password
+      <br>
+    </div>
+    <a><button type="submit" class="btn btn-primary">Submit</button></a>
+  </form>
+</div>
+<script>
+  function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>

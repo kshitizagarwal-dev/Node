@@ -1,0 +1,57 @@
+
+<form class="d-flex" method="POST" action="/" novalidate>
+      <a id="main_button" class="btn btn-warning pull-right" type="button" href="/"> Logout</a>
+      
+  </form>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrum-item"> <a href="/teacher/viewall"> Back</a></li>
+    </ol>
+</nav>
+
+<div class="viewresult p-5">
+    {{#each rows}}
+    
+    <div class="row align-items-center">
+        <div class="col-4">
+            <label for="rollno" class="col-form-label">Roll No</label>
+        </div>
+        <div class="col-7">
+            <input type="number" id="rollno" class="form-control" name="rollno" value="{{this.rollno}}">
+        </div>
+    </div>
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-4">
+            <label for="name" class="col-form-label">Name</label>
+        </div>
+        <div class="col-7">
+            <input type="text" id="name" class="form-control" name="name" value="{{this.name}}">
+        </div>
+    </div>
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-4">
+            <label for="dob" class="col-form-label">Date of Birth</label>
+        </div>
+        <div class="col-7">
+            <input type="text" id="dob" class="form-control" name="dob" value="{{this.dob}}">
+        </div>
+    </div>
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-4">
+            <label for="score" class="col-form-label">Score</label>
+        </div>
+        <div class="col-7">
+            <input type="number" id="score" class="form-control" name="score" value="{{this.score}}">
+        </div>
+    </div>
+    <br><br>
+
+    {{/each}}
+</div>

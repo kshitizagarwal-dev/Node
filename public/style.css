@@ -1,0 +1,37 @@
+.bg {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .bg a {
+    text-decoration: none;
+    color: black;
+  }
+  .bg button {
+    background: #3d94f6;
+    border-radius: 30px;
+    color: #000000;
+    font-family: Brush Script MT;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 40px;
+    box-shadow: 20px 1px 45px 10px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337fed 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .bg button:hover {
+    border: solid #337fed 1px;
+    background: #1e62d0;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .log {
+    margin: 0px 200px;
+  }

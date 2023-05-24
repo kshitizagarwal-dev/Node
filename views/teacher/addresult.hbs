@@ -1,0 +1,26 @@
+
+<form class="d-flex" method="POST" action="/" novalidate>
+      <a id="main_button" class="btn btn-warning pull-right" type="button" href="/"> Logout</a>
+      
+  </form>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrum-item"> <a href="/teacher/viewall"> Back</a></li>
+    </ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+
+
+<h3> Add New Result </h3>
+<form class="row needs validation" method="POST" novalidate>
+    {{> form}}
+
+</form>
